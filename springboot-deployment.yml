@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: springboot-deployment
+  name: Springboot-deployment
   labels:
-    app: springboot
+    app: Springboot
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: springboot
+      app: Springboot
   template:
     metadata:
       labels:
-        app: springboot
+        app: Springboot
     spec:
       containers:
-      - name: springboot-container
-        image: cloudtechmasters/springboot-maven-course-micro-svc:#{Build.BuildId}#
+      - name: Springboot Deployment
+        image: 9640350004/springboot-pet
         ports:
         - containerPort: 8080

@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Springboot-deployment
+  name: springboot-deployment
   labels:
-    app: Springboot
+    app: springboot
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: Springboot
+      app: springboot
   template:
     metadata:
       labels:
-        app: Springboot
+        app: springboot
     spec:
       containers:
       - name: Springboot Deployment

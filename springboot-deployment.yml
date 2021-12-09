@@ -15,7 +15,7 @@ spec:
         app: springboot
     spec:
       containers:
-      - name: Springboot Deployment
+      - name: Springboot deployment
         image: 9640350004/springboot-pet
         ports:
         - containerPort: 8080

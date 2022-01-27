@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: springboot-deployment
-        image: 13491a03c5/springboot-maven-course-micro-svc:#(Build.BuildId)#
+        image: lucky7acr.azurecr.io/acrcontainerrepository:#(Build.BuildId)#
         ports:
         - containerPort: 8080

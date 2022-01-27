@@ -15,7 +15,7 @@ spec:
         app: springboot
     spec:
       containers:
-      - name: springboot-deployment-con
-        image: 9640350004/springboot-pet:#(Build.BuildId)#
+      - name: springboot-deployment
+        image: 13491a03c5/springboot-maven-course-micro-svc:#(Build.BuildId)#
         ports:
         - containerPort: 8080

@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: springboot-deployment
-        image: lucky7acraks.azurecr.io/lucky7acraks:latest
+        image: lucky7acraks.azurecr.io/lucky7acraks:#(Build.BuildId)#
         ports:
         - containerPort: 8080
